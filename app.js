@@ -5,7 +5,9 @@ var mongo = require("mongodb"),
     io = require("socket.io"),  // socket io server
     http = require("http");
 
-var mongodbUri = "mongodb://127.0.0.1/chat";
+//var mongodbUri = "mongodb://127.0.0.1/chat";
+
+var mongodbUri = "mongodb://aditya9219:engineer001@ds131119.mlab.com:31119/db_aditya9219"
 
 var app = http.createServer(handler);
 io = io.listen(app);
